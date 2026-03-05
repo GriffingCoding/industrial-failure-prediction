@@ -1,14 +1,14 @@
 # Predictive Maintenance System (AI4I Dataset)
 
 ## Overview
-This project uses the AI4I 2020 Predictive Maintenance dataset to explore how machine failure can be predicted using structured data and machine learning. The goal is to build a small end-to-end workflow that mirrors how predictive maintenance could work in a real industrial setting — from raw data to database storage to model evaluation.
+This project uses the AI4I 2020 Predictive Maintenance dataset to explore how machine failure can be predicted using structured data and machine learning. The goal is to build a small end-to-end workflow that mirrors how predictive maintenance could work in a real industrial setting, from raw data to database storage to model evaluation.
 
 Rather than just training a model in a single notebook, this project focuses on organizing the data pipeline clearly and evaluating results in a way that reflects real operational tradeoffs.
 
 ## Business Context
 Unplanned downtime is expensive in manufacturing environments. Identifying machines at higher risk of failure allows maintenance to be scheduled proactively instead of reactively.
 
-In this dataset, failures are relatively rare (~3–4%), which makes this an imbalanced classification problem. Because missed failures are typically more costly than unnecessary inspections, recall and F1-score are emphasized over raw accuracy.
+In this dataset, failures are uncommon (~3.5%), which makes this an imbalanced classification problem. Because missed failures are typically more costly than unnecessary inspections, recall and F1-score are emphasized over raw accuracy.
 
 ## Dataset
 This project uses the AI4I 2020 Predictive Maintenance Dataset from Kaggle.
@@ -19,7 +19,7 @@ The dataset contains simulated industrial sensor data including:
 - Rotational speed
 - Torque
 - Tool wear
-- Machine failure label
+- Machine failure labels
 
 The raw CSV file is not included due to licensing.
 
